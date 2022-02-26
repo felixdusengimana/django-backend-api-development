@@ -1,2 +1,8 @@
 ### REST APIs development with Django
-This repositories contains notes and codes for developing APIs using Django Python Framework.
+
+The covers how to build a fully functioning REST API using:
+
+Python
+Django / Django-REST-Framework
+Docker / Docker-Compose
+Test Driven Development
