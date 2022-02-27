@@ -19,4 +19,12 @@ I covered how to build a fully functioning REST API using:
 ├── app
 │   ├── 
 │   └──  -->
+    .
+    ├── app                   
+    ├── .gitingore      
+    ├── docker-compose.yml    
+    ├── Dockefile                  
+    ├── LICENSE
+    ├── requirements.txt                
+    └── README.md
 
