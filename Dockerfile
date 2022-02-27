@@ -1,5 +1,6 @@
 FROM python:3.7-alpine
 LABEL org.opencontainers.image.authors="phelixdusengimana@gmail.com"
+LABEL AUTHOR phelixdusengimana
 
 ENV PYTHONUNBUFFERED 1
 
