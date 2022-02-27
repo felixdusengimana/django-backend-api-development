@@ -9,7 +9,7 @@ I covered how to build a fully functioning REST API using:
 
 ### App structure
 
-.
+<!-- .
 ├── .gitingore `contains git ignore configuration`
 ├── docker-compose.yml `Define the services fro our app`
 ├── Dockefile `contains configurations to create docker image`
@@ -18,5 +18,5 @@ I covered how to build a fully functioning REST API using:
 ├── requirements.txt `contains python packages for this application`
 ├── app
 │   ├── 
-│   └── 
+│   └──  -->
 
