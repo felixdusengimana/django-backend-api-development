@@ -21,7 +21,8 @@ I covered how to build a fully functioning REST API using:
 │   └──  -->
     .
     ├── app                   
-    ├── .gitingore      
+    ├── .gitingore   
+    ├── .travis.yml      
     ├── docker-compose.yml    
     ├── Dockefile                  
     ├── LICENSE
