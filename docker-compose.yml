@@ -6,4 +6,4 @@ services:
       - "8000:8000"
     volumes:
       - ./app:/app
-    command: sh -C "python manager.py runserver 0.0.0.0:8000"
+    command: sh -c "python manager.py runserver 0.0.0.0:8000"
