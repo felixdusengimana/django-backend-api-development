@@ -101,11 +101,10 @@ class PrivateUserAPITest(TestCase):
 
     def setUp(self):
         self.user = get_user_model().objects.create_user(
-            {
-                'email': "test@gmail.com",
-                'password': 'test@123',
-                'name': "Felix Afex"
-            })
+            email='phelix@gmail.com',
+            password='phel453',
+            name='feadaa',
+        )
 
         self.client = APIClient()
         self.client.force_authenticate(user=self.user)
