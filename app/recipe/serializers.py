@@ -11,8 +11,9 @@ class TagSerializer(serializers.ModelSerializer):
 
 
 class IngredientSerializer(serializers.ModelSerializer):
-    """Serializers for tag objects."""
+    """Serializer for an ingredient object"""
+
     class Meta:
         model = Ingredient
         fields = ('id', 'name')
-        read_only_fields = ('id', )
+        read_only_fields = ('id',)

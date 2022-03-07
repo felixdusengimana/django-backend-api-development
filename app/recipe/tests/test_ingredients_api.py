@@ -35,12 +35,11 @@ class PrivateIngredientApiTest(TestCase):
 
     def test_retrieve_ingredients(self):
         """Test retrieve ingredients."""
-
         Ingredient.objects.create(user=self.user, name="Kale")
         Ingredient.objects.create(user=self.user, name="Salt")
 
         res = self.client.get(INGREDIENT_URL)
-        ingredients = self.client.objects.all().order_by('-name')
+        ingredients = Ingredient.objects.all().order_by('-name')
         serializer = IngredientSerializer(ingredients, many=True)
         self.assertEqual(res.status_code, status.HTTP_200_OK)
         self.assertEqual(res.data, serializer.data)
