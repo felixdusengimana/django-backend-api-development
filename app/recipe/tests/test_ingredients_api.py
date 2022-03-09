@@ -47,7 +47,8 @@ class PrivateIngredientApiTest(TestCase):
 
     def test_ingredients_limited_to_user(self):
         """Test that only ingredients for authenticated are only returned."""
-        user2 = get_user_model().objects.create_user("user2@gmail.com", "testpass")
+        user2 = get_user_model().objects.create_user("user2@gmail.com",
+                                                     "testpass")
         Ingredient.objects.create(user=user2, name="Vinegar")
         ingredient = Ingredient.objects.create(user=self.user, name="Tumeric")
         res = self.client.get(INGREDIENT_URL)
@@ -69,6 +70,6 @@ class PrivateIngredientApiTest(TestCase):
 
     def test_create_ingredient_invalid(self):
         """Test create ingredient invalid."""
-        payload = {'name':''}
+        payload = {'name': ''}
         res = self.client.post(INGREDIENT_URL, payload)
         self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
