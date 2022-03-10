@@ -25,7 +25,7 @@ class UserAdmin(BaseUserAdmin):
 
 
 admin.site.register(User, UserAdmin)
-admin.site.site_header = 'My administration'
+admin.site.site_header = 'RECIPE API ADMIN PANEL'
 admin.site.register(Tag)
 admin.site.register(Ingredient)
 admin.site.register(Recipe)
